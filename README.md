@@ -1,544 +1,1143 @@
-# 🔐 ZIP Password Cracker - Complete Suite# 🔐 ZIP Password Cracker - Complete Suite# 🔐 ZIP Password Cracker - Multi-Digit Brute Force
+# 🔐 ZIP Password Cracker - Complete Suite# 🔐 ZIP Password Cracker - Complete Suite
 
 
 
-**Version 2.0.0** - Full Cross-Platform Support (Linux & Windows)
+**Version 2.0.0** - Full Cross-Platform Support (Linux & Windows)**Version 2.0.0** - Full Cross-Platform Support (Linux & Windows)
 
 
 
-Kumpulan program Python untuk melakukan **crack password ZIP** secara otomatis menggunakan teknik brute force dengan **progress bar real-time**. Suite ini terdiri dari 3 program berbeda sesuai dengan tipe password yang ingin di-crack.Kumpulan program Python untuk melakukan **crack password ZIP** secara otomatis menggunakan teknik brute force. Suite ini terdiri dari 3 program berbeda sesuai dengan tipe password yang ingin di-crack.Program Python untuk melakukan **crack password ZIP dengan 1-9 digit angka** secara otomatis. Program ini menggunakan teknik brute force untuk mencoba kombinasi password numerik dengan jumlah digit yang dapat disesuaikan.
+Kumpulan program Python untuk melakukan **crack password ZIP** secara otomatis menggunakan teknik brute force dengan **progress bar real-time**. Suite ini terdiri dari 3 program berbeda sesuai dengan tipe password yang ingin di-crack.Kumpulan program Python untuk melakukan **crack password ZIP** secara otomatis menggunakan teknik brute force dengan **progress bar real-time**. Suite ini terdiri dari 3 program berbeda sesuai dengan tipe password yang ingin di-crack.
 
 
 
----
+------
 
 
 
-## 🎯 3 Program Utama------
+## 📖 **Pilih Dokumentasi Sesuai Platform Anda:**## 📖 **Pilih Dokumentasi Sesuai Platform Anda:**
 
 
 
-| Program | Character Set | Kombinasi | Log File | Kecepatan | Progress Bar |
+<table><table>
+
+<tr><tr>
+
+<td align="center" width="50%"><td align="center" width="50%">
+
+
+
+### 🪟 **Pengguna Windows**### 🪟 **Pengguna Windows**
+
+
+
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](README_WINDOWS.md)[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](README_WINDOWS.md)
+
+
+
+**[📘 Buka Panduan Windows →](README_WINDOWS.md)****[📘 Buka Panduan Windows →](README_WINDOWS.md)**
+
+
+
+Panduan lengkap untuk:Panduan lengkap untuk:
+
+- ✅ Instalasi di Windows (CMD/PowerShell)- ✅ Instalasi di Windows (CMD/PowerShell)
+
+- ✅ Cara penggunaan di Windows- ✅ Cara penggunaan di Windows
+
+- ✅ Troubleshooting Windows- ✅ Troubleshooting Windows
+
+- ✅ Tips & Tricks khusus Windows- ✅ Tips & Tricks khusus Windows
+
+- ✅ Batch files & Task Scheduler- ✅ Batch files & Task Scheduler
+
+
+
+</td></td>
+
+<td align="center" width="50%"><td align="center" width="50%">
+
+
+
+### 🐧 **Pengguna Linux**### 🐧 **Pengguna Linux**
+
+
+
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](README_LINUX.md)[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](README_LINUX.md)
+
+
+
+**[📗 Buka Panduan Linux →](README_LINUX.md)****[📗 Buka Panduan Linux →](README_LINUX.md)**
+
+
+
+Panduan lengkap untuk:Panduan lengkap untuk:
+
+- ✅ Instalasi di Linux (apt/yum/pacman)- ✅ Instalasi di Linux (apt/yum/pacman)
+
+- ✅ Cara penggunaan di Linux- ✅ Cara penggunaan di Linux
+
+- ✅ Troubleshooting Linux- ✅ Troubleshooting Linux
+
+- ✅ Tips & Tricks khusus Linux- ✅ Tips & Tricks khusus Linux
+
+- ✅ Screen/Tmux, Systemd, Cron- ✅ Screen/Tmux, Systemd, Cron
+
+
+
+</td></td>
+
+</tr></tr>
+
+</table></table>
+
+
+
+------
+
+
+
+## 🎯 3 Program Utama
+
+
+
+| Program | Character Set | Kombinasi | Log File | Kecepatan | Progress Bar |## 🎯 3 Program Utama
 
 |---------|---------------|-----------|----------|-----------|--------------|
 
-| **`crack_zip_password_angka.py`** | 0-9 | 1-9 digit | `log.txt` | ⚡ Tercepat | ✅ |## 🎯 3 Program Utama## ✨ Fitur Utama
+| **`crack_zip_password_angka.py`** | 0-9 | 1-9 digit | `log.txt` | ⚡ Tercepat | ✅ || Program | Character Set | Kombinasi | Log File | Kecepatan | Progress Bar |
+
+| **`crack_zip_password_alpha.py`** | a-z, A-Z | Unlimited | `log_alpha.txt` | 🔶 Sedang | ✅ ||---------|---------------|-----------|----------|-----------|--------------|
+
+| **`crack_zip_password_alphanumeric.py`** | a-z, A-Z, 0-9 | Unlimited | `log_alphanumeric.txt` | 🐌 Lambat | ✅ || **`crack_zip_password_angka.py`** | 0-9 | 1-9 digit | `log.txt` | ⚡ Tercepat | ✅ |
 
 | **`crack_zip_password_alpha.py`** | a-z, A-Z | Unlimited | `log_alpha.txt` | 🔶 Sedang | ✅ |
 
-| **`crack_zip_password_alphanumeric.py`** | a-z, A-Z, 0-9 | Unlimited | `log_alphanumeric.txt` | 🐌 Lambat | ✅ |
+---| **`crack_zip_password_alphanumeric.py`** | a-z, A-Z, 0-9 | Unlimited | `log_alphanumeric.txt` | 🐌 Lambat | ✅ |
 
 
 
----| Program | Character Set | Kombinasi/Digit | Log File | Keterangan |- � **Multi-Digit Support**: Crack password dari 1 digit sampai 9 digit (0 - 999,999,999)
+## ✨ Fitur Utama
 
 
 
-## ✨ Fitur Utama|---------|---------------|-----------------|----------|------------|- 🎯 **Custom Range**: Pilih range digit sesuai kebutuhan (misal: hanya 4-6 digit)
+### 🔥 NEW in v2.0.0---| Program | Character Set | Kombinasi/Digit | Log File | Keterangan |- � **Multi-Digit Support**: Crack password dari 1 digit sampai 9 digit (0 - 999,999,999)
 
 
 
-### 🔥 NEW in v2.0.0| `crack_zip_password_angka.py` | 0-9 | 1-9 digit | `log.txt` | **Hanya Angka** - Tercepat |- ⚡ **Optimasi Kecepatan**: Menggunakan CRC verification untuk pengecekan password yang lebih cepat
-
-
-
-- 📊 **Progress Bar Real-time** - Visual progress bar untuk setiap panjang password| `crack_zip_password_alpha.py` | a-z, A-Z | Unlimited | `log_alpha.txt` | **Hanya Huruf** - Lambat untuk >4 char |- � **Real-time Statistics**: Menampilkan progress, speed (pwd/s), dan estimasi waktu
+- 📊 **Progress Bar Real-time** - Visual progress bar untuk setiap panjang password
 
 - 🎯 **Auto-Detection** - Otomatis deteksi tipe enkripsi (AES atau ZipCrypto)
 
-- 🌐 **Cross-Platform** - Support file ZIP dari Windows dan Linux| `crack_zip_password_alphanumeric.py` | a-z, A-Z, 0-9 | Unlimited | `log_alphanumeric.txt` | **Kombinasi Lengkap** - Paling lambat |- �📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis
+- 🌐 **Cross-Platform** - Support file ZIP dari Windows dan Linux## ✨ Fitur Utama|---------|---------------|-----------------|----------|------------|- 🎯 **Custom Range**: Pilih range digit sesuai kebutuhan (misal: hanya 4-6 digit)
 
 - 🔐 **Dual Encryption** - AES-256 (Windows) dan ZipCrypto (Linux)
 
-- 📝 **Logging Otomatis**: Menyimpan semua hasil crack ke file `log.txt`
+
 
 ### 🎨 Core Features
 
----- ⏭️ **Smart Skip**: Otomatis skip file yang sudah pernah di-crack sebelumnya
+### 🔥 NEW in v2.0.0| `crack_zip_password_angka.py` | 0-9 | 1-9 digit | `log.txt` | **Hanya Angka** - Tercepat |- ⚡ **Optimasi Kecepatan**: Menggunakan CRC verification untuk pengecekan password yang lebih cepat
 
 - ⚡ **Optimasi CRC**: Menggunakan CRC32 verification untuk kecepatan maksimal
 
-- 🔄 **Otomatis**: Tidak perlu input user, langsung jalan- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan
-
 - 📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis
 
-- 📝 **Logging Terpisah**: Setiap program punya log sendiri## ✨ Fitur Utama- 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS
+- 📝 **Logging Terpisah**: Setiap program punya log sendiri
 
-- ⏭️ **Smart Skip**: Otomatis skip file yang sudah di-crack sebelumnya
+- ⏭️ **Smart Skip**: Otomatis skip file yang sudah di-crack sebelumnya- 📊 **Progress Bar Real-time** - Visual progress bar untuk setiap panjang password| `crack_zip_password_alpha.py` | a-z, A-Z | Unlimited | `log_alpha.txt` | **Hanya Huruf** - Lambat untuk >4 char |- � **Real-time Statistics**: Menampilkan progress, speed (pwd/s), dan estimasi waktu
 
-- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan- 🎨 **User-Friendly**: Menu interaktif dengan tampilan yang rapi
+- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan
+
+- 🎨 **User-Friendly**: Menu interaktif dengan tampilan yang rapi- 🎯 **Auto-Detection** - Otomatis deteksi tipe enkripsi (AES atau ZipCrypto)
 
 - 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS
 
-- 🔢 **Multi-Mode**: Angka, Huruf, atau Alphanumeric
+- 🔢 **Multi-Mode**: Angka, Huruf, atau Alphanumeric- 🌐 **Cross-Platform** - Support file ZIP dari Windows dan Linux| `crack_zip_password_alphanumeric.py` | a-z, A-Z, 0-9 | Unlimited | `log_alphanumeric.txt` | **Kombinasi Lengkap** - Paling lambat |- �📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis
+
+
+
+---- 🔐 **Dual Encryption** - AES-256 (Windows) dan ZipCrypto (Linux)
+
+
+
+## 📊 Progress Bar Preview- 📝 **Logging Otomatis**: Menyimpan semua hasil crack ke file `log.txt`
+
+
+
+```### 🎨 Core Features
+
+[*] Mencoba password 2 karakter...
+
+[*] Kombinasi untuk 2 karakter: 2,704---- ⏭️ **Smart Skip**: Otomatis skip file yang sudah pernah di-crack sebelumnya
+
+[*] Length 2: [████████████████████              ] 65.2% (1762/2704)
+
+```- ⚡ **Optimasi CRC**: Menggunakan CRC32 verification untuk kecepatan maksimal
+
+
+
+Progress bar menampilkan:- 🔄 **Otomatis**: Tidak perlu input user, langsung jalan- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan
+
+- **Visual bar**: Representasi grafis progress
+
+- **Persentase**: Progress dalam persen (%)- 📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis
+
+- **Kombinasi**: Jumlah yang sudah dicoba / total
+
+- 📝 **Logging Terpisah**: Setiap program punya log sendiri## ✨ Fitur Utama- 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS
 
 ---
 
-- ⚡ **Optimasi CRC**: Menggunakan CRC32 verification untuk kecepatan maksimal---
+- ⏭️ **Smart Skip**: Otomatis skip file yang sudah di-crack sebelumnya
 
-## 📊 Progress Bar Preview
+## 📋 Requirement
 
-- 🔄 **Otomatis**: Tidak perlu input user, langsung jalan
+- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan- 🎨 **User-Friendly**: Menu interaktif dengan tampilan yang rapi
 
-```
+### Sistem Operasi
 
-[*] Mencoba password 2 karakter...- 📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis## 📋 Requirement
-
-[*] Kombinasi untuk 2 karakter: 2,704
-
-[*] Length 2: [████████████████████              ] 65.2% (1762/2704)- 📝 **Logging Terpisah**: Setiap program punya log sendiri
-
-```
-
-- ⏭️ **Smart Skip**: Otomatis skip file yang sudah di-crack sebelumnya- **Python 3.6** atau lebih tinggi
-
-Progress bar menampilkan:
-
-- **Visual bar**: Representasi grafis progress- 📊 **Real-time Progress**: Menampilkan progress, speed (pwd/s), dan password yang dicoba- Library standar Python (tidak perlu install tambahan):
-
-- **Persentase**: Progress dalam persen (%)
-
-- **Kombinasi**: Jumlah yang sudah dicoba / total- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan  - `zipfile` (bawaan Python)
-
-
-
----- 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS  - `os` (bawaan Python)
-
-
-
-## 📋 Requirement- 🎨 **User-Friendly**: Tampilan output yang rapi dan mudah dipahami  - `zlib` (bawaan Python)
-
-
-
-### Sistem Operasi  - `pathlib` (bawaan Python)
+- 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS
 
 - ✅ **Linux** (Ubuntu, Debian, CentOS, dll)
 
-- ✅ **Windows** (7, 8, 10, 11)---
+- ✅ **Windows** (7, 8, 10, 11)- 🔢 **Multi-Mode**: Angka, Huruf, atau Alphanumeric
 
 - ✅ **macOS** (10.14+)
 
-### ✅ Cek Versi Python
+---
 
 ### Software
 
-- **Python 3.6** atau lebih tinggi## 📋 Requirement
+- ⚡ **Optimasi CRC**: Menggunakan CRC32 verification untuk kecepatan maksimal---
 
-- **pyzipper** library untuk AES support
+- **Python 3.6** atau lebih tinggi
 
-```bash
-
-### 📦 Instalasi Dependencies
-
-### Sistem Operasipython3 --version
-
-```bash
-
-pip3 install pyzipper- ✅ **Linux** (Ubuntu, Debian, CentOS, dll)```
-
-```
-
-- ✅ **Windows** (7, 8, 10, 11)
-
-**Auto-install:**
-
-- pyzipper 0.3.6- ✅ **macOS** (10.14+)---
-
-- pycryptodomex 3.23.0
+- **pyzipper** library untuk AES support## 📊 Progress Bar Preview
 
 
 
-### ✅ Cek Versi Python
-
-### Software## 📦 Instalasi
-
-**Linux/macOS:**
-
-```bash- **Python 3.6** atau lebih tinggi
-
-python3 --version
-
-```- Library standar Python (sudah built-in, tidak perlu install tambahan)### 1. Clone atau Download File
+### 📦 Instalasi Dependencies- 🔄 **Otomatis**: Tidak perlu input user, langsung jalan
 
 
 
-**Windows:**
+```bash```
 
-```cmd
+pip3 install pyzipper
 
-python --version### ✅ Cek Versi Python```bash
-
-```
-
-# Jika menggunakan git
-
----
-
-**Linux/macOS:**git clone <repo-url>
-
-## 🚀 Cara Menggunakan
-
-```bashcd CrackPasswordZIP
-
-### 📂 Setup Folder
-
-python3 --version
-
-1. Letakkan semua file ZIP yang ingin di-crack di folder **`FileZip/`**
-
-2. Hasil ekstraksi akan disimpan di folder **`Extracted/`**```# Atau copy manual file crack_zip_password.py
-
-3. Log hasil akan disimpan sesuai program yang digunakan
-
-```
-
-### Program 1️⃣: Crack Password Angka (0-9)
-
-**Windows:**
-
-**Cocok untuk:** Password pure numeric seperti PIN, tanggal, nomor
-
-```cmd### 2. Verifikasi Struktur Folder
-
-**Linux/macOS:**
-
-```bashpython --version
-
-python3 crack_zip_password_angka.py
-
-``````Pastikan struktur folder seperti ini:
+```[*] Mencoba password 2 karakter...- 📁 **Batch Processing**: Memproses semua file ZIP di folder secara otomatis## 📋 Requirement
 
 
 
-**Windows:**
+**Auto-install:**[*] Kombinasi untuk 2 karakter: 2,704
 
-```cmd
+- pyzipper 0.3.6
 
-python crack_zip_password_angka.py---```
+- pycryptodomex 3.23.0[*] Length 2: [████████████████████              ] 65.2% (1762/2704)- 📝 **Logging Terpisah**: Setiap program punya log sendiri
+
+
+
+---```
+
+
+
+## 🚀 Quick Start- ⏭️ **Smart Skip**: Otomatis skip file yang sudah di-crack sebelumnya- **Python 3.6** atau lebih tinggi
+
+
+
+> **📖 Untuk panduan instalasi dan penggunaan lengkap, silakan pilih dokumentasi platform Anda:**Progress bar menampilkan:
+
+> 
+
+> - 🪟 **Windows**: [README_WINDOWS.md](README_WINDOWS.md)- **Visual bar**: Representasi grafis progress- 📊 **Real-time Progress**: Menampilkan progress, speed (pwd/s), dan password yang dicoba- Library standar Python (tidak perlu install tambahan):
+
+> - 🐧 **Linux**: [README_LINUX.md](README_LINUX.md)
+
+- **Persentase**: Progress dalam persen (%)
+
+### Struktur Folder
+
+- **Kombinasi**: Jumlah yang sudah dicoba / total- 📤 **Auto Extract**: Otomatis mengekstrak file setelah password berhasil ditemukan  - `zipfile` (bawaan Python)
 
 ```
 
 CrackPasswordZIP/
 
-**Contoh Output:**
+├── crack_zip_password_angka.py       # Program numeric (0-9)
 
-```## 🚀 Cara Menggunakan├── crack_zip_password.py      # File script utama
+├── crack_zip_password_alpha.py       # Program alphabetic (a-z, A-Z)---- 🖥️ **Cross-Platform**: Berjalan di Linux, Windows, dan macOS  - `os` (bawaan Python)
 
-============================================================
+├── crack_zip_password_alphanumeric.py # Program alphanumeric (full)
 
-ZIP Password Cracker - Numeric Brute Force├── FileZip/                   # Folder berisi file ZIP
+├── FileZip/                          # Tempat file ZIP yang ingin di-crack
 
-Character Set: 0-9 (10 karakter)
+├── Extracted/                        # Hasil ekstraksi (auto created)
 
-Support: ZipCrypto (Linux) + AES (Windows)### Program 1️⃣: Crack Password Angka (0-9)│   ├── file1.zip
+├── log.txt                           # Log program angka## 📋 Requirement- 🎨 **User-Friendly**: Tampilan output yang rapi dan mudah dipahami  - `zlib` (bawaan Python)
 
-============================================================
+├── log_alpha.txt                     # Log program alpha
 
-[*] Ditemukan 1 file ZIP│   ├── file2.zip
+├── log_alphanumeric.txt              # Log program alphanumeric
 
-[*] Memproses: test_angka.zip
+└── README.md                         # Dokumentasi ini
 
-[*] Deteksi: ZipCrypto (Linux/Traditional)**Linux/macOS:**│   └── ...
+```### Sistem Operasi  - `pathlib` (bawaan Python)
 
-[*] Mencoba password 1-9 digit (0 - 999,999,999)
 
-```bash├── Extracted/                 # Folder output (auto created)
 
-[+] PASSWORD DITEMUKAN: 123
+### Penggunaan Dasar- ✅ **Linux** (Ubuntu, Debian, CentOS, dll)
 
-[+] Panjang: 3 digitpython3 crack_zip_password_angka.py├── log.txt                    # File log (auto created)
 
-[+] Ditemukan setelah mencoba 124 kombinasi dalam 0.05 detik
 
-[+] File sudah diekstrak ke Extracted/test_angka```└── README.md                  # Dokumentasi ini
-
-```
-
-```
-
-### Program 2️⃣: Crack Password Huruf (a-z, A-Z)
-
-**Windows:**
-
-**Cocok untuk:** Password pure alphabetic, kata-kata sederhana
-
-```cmd### 3. Letakkan File ZIP
-
-**Linux/macOS:**
-
-```bashpython crack_zip_password_angka.py
-
-python3 crack_zip_password_alpha.py
-
-``````Tempatkan semua file ZIP yang ingin di-crack ke dalam folder `FileZip/`:
-
-
-
-**Windows:**
-
-```cmd
-
-python crack_zip_password_alpha.py### Program 2️⃣: Crack Password Huruf (a-z, A-Z)```bash
-
-```
-
-mkdir -p FileZip
-
-**Contoh Output:**
-
-```**Linux/macOS:**# Copy file ZIP ke folder FileZip
-
-============================================================
-
-ZIP Password Cracker - Alphabetic Brute Force```bashcp /path/to/file.zip FileZip/
-
-Character Set: a-z, A-Z (52 karakter)
-
-Support: ZipCrypto (Linux) + AES (Windows)python3 crack_zip_password_alpha.py```
-
-============================================================
-
-[*] Ditemukan 1 file ZIP```
-
-[*] Memproses: test_alpha.zip
-
-[*] Deteksi: ZipCrypto (Linux/Traditional)---
-
-
-
-[*] Mencoba password 1 karakter...**Windows:**
-
-[*] Kombinasi untuk 1 karakter: 52
-
-[*] Length 1: [██████████████████████████████████████████████████] 100.0% (52/52)```cmd## 🚀 Cara Menggunakan
-
-
-
-[*] Mencoba password 2 karakter...python crack_zip_password_alpha.py
-
-[*] Kombinasi untuk 2 karakter: 2,704
-
-```### Menjalankan Program
-
-[+] PASSWORD DITEMUKAN: ab
-
-[+] Panjang: 2 karakter
-
-[+] Ditemukan setelah mencoba 54 kombinasi dalam 0.02 detik
-
-```### Program 3️⃣: Crack Password Alphanumeric (a-z, A-Z, 0-9)**Linux/macOS:**
-
-
-
-### Program 3️⃣: Crack Password Alphanumeric (a-z, A-Z, 0-9)```bash
-
-
-
-**Cocok untuk:** Password kombinasi huruf dan angka**Linux/macOS:**python3 crack_zip_password_angka.py
-
-
-
-**Linux/macOS:**```bash```
+**1. Letakkan file ZIP:**- ✅ **Windows** (7, 8, 10, 11)---
 
 ```bash
 
-python3 crack_zip_password_alphanumeric.pypython3 crack_zip_password_alphanumeric.py
+cp your-file.zip FileZip/- ✅ **macOS** (10.14+)
 
 ```
 
-```**Windows:**
+### ✅ Cek Versi Python
 
-**Windows:**
+**2. Jalankan program:**
 
-```cmd```cmd
+### Software
 
-python crack_zip_password_alphanumeric.py
+```bash
 
-```**Windows:**python crack_zip_password_angka.py
+# Linux/macOS- **Python 3.6** atau lebih tinggi## 📋 Requirement
 
+python3 crack_zip_password_angka.py
 
+- **pyzipper** library untuk AES support
 
-**Contoh Output:**```cmd```
+# Windows
 
-```
-
-============================================================python crack_zip_password_alphanumeric.py
-
-ZIP Password Cracker - Alphanumeric Brute Force
-
-Character Set: a-z, A-Z, 0-9 (62 karakter)```### Menu Interaktif
-
-Support: ZipCrypto (Linux) + AES (Windows)
-
-============================================================
-
-[*] Ditemukan 1 file ZIP
-
-[*] Memproses: test_alphanumeric.zip---Setelah program dijalankan, Anda akan melihat menu pilihan digit:
-
-[*] Deteksi: ZipCrypto (Linux/Traditional)
-
-
-
-[*] Mencoba password 1 karakter...
-
-[*] Kombinasi untuk 1 karakter: 62## 📊 Performa & Estimasi Waktu```
-
-[*] Length 1: [██████████████████████████████████████████████████] 100.0% (62/62)
-
-============================================================
-
-[*] Mencoba password 2 karakter...
-
-[*] Kombinasi untuk 2 karakter: 3,844### Program Angka (0-9)PILIH JUMLAH DIGIT PASSWORD
-
-
-
-[+] PASSWORD DITEMUKAN: a1============================================================
-
-[+] Panjang: 2 karakter
-
-[+] Ditemukan setelah mencoba 116 kombinasi dalam 0.06 detik| Digit | Kombinasi | Waktu Rata-rata | Worst Case |1. 1 digit  (0-9)          - Sangat Cepat
+python crack_zip_password_angka.py```bash
 
 ```
 
-|-------|-----------|-----------------|------------|2. 2 digit  (0-99)         - Sangat Cepat
+### 📦 Instalasi Dependencies
+
+**3. Lihat hasil:**
+
+```bash### Sistem Operasipython3 --version
+
+cat log.txt
+
+ls Extracted/```bash
+
+```
+
+pip3 install pyzipper- ✅ **Linux** (Ubuntu, Debian, CentOS, dll)```
+
+> **💡 Untuk tutorial lengkap, lihat:**
+
+> - 🪟 [README_WINDOWS.md](README_WINDOWS.md) - Panduan Windows```
+
+> - 🐧 [README_LINUX.md](README_LINUX.md) - Panduan Linux
+
+- ✅ **Windows** (7, 8, 10, 11)
 
 ---
 
-| 1-3 | 1,110 | < 1 detik | < 1 detik |3. 3 digit  (0-999)        - Cepat
+**Auto-install:**
 
 ## 📊 Performa & Estimasi Waktu
 
-| 4 | 10,000 | 30 detik | 5 menit |4. 4 digit  (0-9999)       - Normal (~1-5 menit)
+- pyzipper 0.3.6- ✅ **macOS** (10.14+)---
 
 ### Program Angka (0-9) - 10 karakter
 
-| 5 | 100,000 | 5 menit | 50 menit |5. 5 digit  (0-99999)      - Lama (~10-50 menit)
+- pycryptodomex 3.23.0
 
 | Digit | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar |
 
-|-------|-----------|-----------------|------------|--------------|| 6 | 1,000,000 | 50 menit | 8 jam |6. 6 digit  (0-999999)     - Sangat Lama (~1-8 jam)
+|-------|-----------|-----------------|------------|--------------|
 
 | 1-3 | 1,110 | < 1 detik | < 1 detik | ✅ Real-time |
 
-| 4 | 10,000 | 30 detik | 5 menit | ✅ Real-time || 7+ | 10,000,000+ | 8+ jam | 3+ hari |7. 7 digit  (0-9999999)    - Ekstrim (~10-80 jam)
+| 4 | 10,000 | 30 detik | 5 menit | ✅ Real-time |### ✅ Cek Versi Python
 
 | 5 | 100,000 | 5 menit | 50 menit | ✅ Per 100k |
 
-| 6 | 1,000,000 | 50 menit | 8 jam | ✅ Per 100k |8. 8 digit  (0-99999999)   - Sangat Ekstrim (~100-800 jam)
+| 6 | 1,000,000 | 50 menit | 8 jam | ✅ Per 100k |### Software## 📦 Instalasi
 
 | 7+ | 10,000,000+ | 8+ jam | 3+ hari | ✅ Per 100k |
 
-### Program Huruf (a-z, A-Z - 52 char)9. 9 digit  (0-999999999)  - Ultra Ekstrim (~1000-8000 jam)
+**Linux/macOS:**
 
 ### Program Huruf (a-z, A-Z) - 52 karakter
 
-10. Custom Range (min-max) - Pilih sendiri
+```bash- **Python 3.6** atau lebih tinggi
 
 | Length | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar |
 
-|--------|-----------|-----------------|------------|--------------|| Length | Kombinasi | Waktu Rata-rata | Worst Case |============================================================
+|--------|-----------|-----------------|------------|--------------|python3 --version
 
 | 1-2 | 2,756 | < 1 detik | ~2 detik | ✅ Real-time |
 
-| 3 | 140,608 | ~1 menit | ~2 menit | ✅ Per 100k ||--------|-----------|-----------------|------------|
+| 3 | 140,608 | ~1 menit | ~2 menit | ✅ Per 100k |```- Library standar Python (sudah built-in, tidak perlu install tambahan)### 1. Clone atau Download File
 
 | 4 | 7,311,616 | ~1 jam | ~2 jam | ✅ Per 100k |
 
-| 5+ | 380,204,032+ | ~2+ hari | Sangat lama | ✅ Per 100k || 1-2 | 2,756 | < 1 detik | ~2 detik |Pilih opsi (1-10): 4
+| 5+ | 380,204,032+ | ~2+ hari | Sangat lama | ✅ Per 100k |
 
 
 
-### Program Alphanumeric (a-z, A-Z, 0-9) - 62 karakter| 3 | 140,608 | ~1 menit | ~2 menit |```
+### Program Alphanumeric (a-z, A-Z, 0-9) - 62 karakter**Windows:**
 
 
 
-| Length | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar || 4 | 7,311,616 | ~1 jam | ~2 jam |
+| Length | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar |```cmd
 
 |--------|-----------|-----------------|------------|--------------|
 
-| 1-2 | 3,906 | < 1 detik | ~3 detik | ✅ Real-time || 5+ | 380,204,032+ | ~2+ hari | Sangat lama |### Contoh Output
+| 1-2 | 3,906 | < 1 detik | ~3 detik | ✅ Real-time |python --version### ✅ Cek Versi Python```bash
 
 | 3 | 238,328 | ~2 menit | ~3 menit | ✅ Per 100k |
 
-| 4 | 14,776,336 | ~2 jam | ~4 jam | ✅ Per 100k |
+| 4 | 14,776,336 | ~2 jam | ~4 jam | ✅ Per 100k |```
 
 | 5+ | 916,132,832+ | ~5+ hari | Sangat lama | ✅ Per 100k |
 
-### Program Alphanumeric (a-z, A-Z, 0-9 - 62 char)```
+# Jika menggunakan git
 
 **Catatan:**
 
-- Progress bar diupdate setiap mencoba password============================================================
+- Progress bar diupdate setiap mencoba password---
 
 - Untuk kombinasi > 100k, progress bar update setiap 100k attempts
 
-- AES encryption ~3x lebih lambat dari ZipCrypto| Length | Kombinasi | Waktu Rata-rata | Worst Case |ZIP Password Cracker - Multi-Digit Brute Force
+- AES encryption ~3x lebih lambat dari ZipCrypto**Linux/macOS:**git clone <repo-url>
 
 
 
----|--------|-----------|-----------------|------------|Cross-platform: Linux | Windows | macOS
+---## 🚀 Cara Menggunakan
 
 
 
-## 🔐 Tipe Enkripsi yang Didukung| 1-2 | 3,906 | < 1 detik | ~3 detik |============================================================
+## 🔐 Tipe Enkripsi yang Didukung```bashcd CrackPasswordZIP
 
 
 
-### 1️⃣ ZipCrypto (Traditional/Linux)| 3 | 238,328 | ~2 menit | ~3 menit |[*] Ditemukan 2 file ZIP
+### 1️⃣ ZipCrypto (Traditional/Linux)### 📂 Setup Folder
 
 
 
-**Dibuat dengan:**| 4 | 14,776,336 | ~2 jam | ~4 jam |[*] Memeriksa log.txt untuk file yang sudah di-crack...
+**Dibuat dengan:**python3 --version
 
 - Linux: `zip -e` atau `zip -P password`
 
-- Older Windows tools| 5+ | 916,132,832+ | ~5+ hari | Sangat lama |
+- Older Windows tools1. Letakkan semua file ZIP yang ingin di-crack di folder **`FileZip/`**
 
 - Legacy ZIP programs
 
-[*] Memproses: archive1.zip
+2. Hasil ekstraksi akan disimpan di folder **`Extracted/`**```# Atau copy manual file crack_zip_password.py
 
 **Karakteristik:**
 
-- ⚡ Lebih cepat di-crack---[*] Range: 4-4 digit
+- ⚡ Lebih cepat di-crack3. Log hasil akan disimpan sesuai program yang digunakan
 
 - 🔓 Enkripsi lebih lemah
 
-- 📦 Compress type: 0 atau 8[*] File terenkripsi, mencoba crack password...
+- 📦 Compress type: 0 atau 8```
 
 
 
-**Contoh:**## 🔒 Keamanan & Legal[*] Total kombinasi yang akan dicoba: 10,000
+**Contoh:**### Program 1️⃣: Crack Password Angka (0-9)
 
 ```bash
 
-zip -P mypassword file.zip document.txt
+zip -P mypassword file.zip document.txt**Windows:**
 
 ```
 
-⚠️ **Program ini hanya boleh digunakan untuk:**[*] Mencoba password 4 digit (1000 - 9999)
+**Cocok untuk:** Password pure numeric seperti PIN, tanggal, nomor
 
 ### 2️⃣ AES Encryption (Windows/Modern)
 
-- ✅ File ZIP milik sendiri[*] Progress: 10,000/10,000 (100.00%) | Speed: 2500 pwd/s | Password: 2547
+```cmd### 2. Verifikasi Struktur Folder
 
 **Dibuat dengan:**
 
-- Windows Explorer (Right-click → Compress)- ✅ Recovery password yang lupa
+- Windows Explorer (Right-click → Compress)**Linux/macOS:**
 
 - WinRAR dengan AES option
 
-- 7-Zip dengan AES-256- ✅ Testing & pembelajaran[+] PASSWORD DITEMUKAN: 2547
+- 7-Zip dengan AES-256```bashpython --version
 
 - Modern ZIP tools
 
-[+] Ditemukan setelah mencoba 1,547 kombinasi dalam 0.62 detik
+python3 crack_zip_password_angka.py
 
 **Karakteristik:**
 
-- 🛡️ Enkripsi lebih kuat (AES-128/192/256)❌ **DILARANG untuk:**[*] Mengekstrak file...
+- 🛡️ Enkripsi lebih kuat (AES-128/192/256)``````Pastikan struktur folder seperti ini:
+
+- 🐌 Lebih lambat di-crack
+
+- 📦 Compress type: 99
+
+
+
+**Contoh:****Windows:**
+
+```cmd
+
+# Windows Explorer```cmd
+
+Right-click → Send to → Compressed (zipped) folder
+
+→ Set password with AES encryptionpython crack_zip_password_angka.py---```
+
+```
+
+```
+
+### 🤖 Auto-Detection
+
+CrackPasswordZIP/
+
+Program **otomatis mendeteksi** tipe enkripsi dan menggunakan method yang sesuai:
+
+**Contoh Output:**
+
+```
+
+[*] Deteksi: AES encryption (Windows) - menggunakan pyzipper```## 🚀 Cara Menggunakan├── crack_zip_password.py      # File script utama
+
+```
+
+============================================================
+
+atau
+
+ZIP Password Cracker - Numeric Brute Force├── FileZip/                   # Folder berisi file ZIP
+
+```
+
+[*] Deteksi: ZipCrypto (Linux/Traditional)Character Set: 0-9 (10 karakter)
+
+```
+
+Support: ZipCrypto (Linux) + AES (Windows)### Program 1️⃣: Crack Password Angka (0-9)│   ├── file1.zip
+
+---
+
+============================================================
+
+## 📝 Format Log File
+
+[*] Ditemukan 1 file ZIP│   ├── file2.zip
+
+### log.txt (Program Angka)
+
+[*] Memproses: test_angka.zip
+
+```
+
+============================================================[*] Deteksi: ZipCrypto (Linux/Traditional)**Linux/macOS:**│   └── ...
+
+ZIP Password Cracking Results (Numeric)
+
+Digit Range: 1-9[*] Mencoba password 1-9 digit (0 - 999,999,999)
+
+Character Set: 0-9
+
+============================================================```bash├── Extracted/                 # Folder output (auto created)
+
+
+
+File: test_angka.zip[+] PASSWORD DITEMUKAN: 123
+
+Password: 123
+
+Status: SUCCESS[+] Panjang: 3 digitpython3 crack_zip_password_angka.py├── log.txt                    # File log (auto created)
+
+---------------------------------------------------------------
+
+```[+] Ditemukan setelah mencoba 124 kombinasi dalam 0.05 detik
+
+
+
+### log_alpha.txt (Program Alpha)[+] File sudah diekstrak ke Extracted/test_angka```└── README.md                  # Dokumentasi ini
+
+
+
+``````
+
+============================================================
+
+ZIP Password Cracking Results (Alphabetic)```
+
+Length Range: 1-999 karakter
+
+Character Set: a-z, A-Z### Program 2️⃣: Crack Password Huruf (a-z, A-Z)
+
+============================================================
+
+**Windows:**
+
+File: test_alpha.zip
+
+Password: ab**Cocok untuk:** Password pure alphabetic, kata-kata sederhana
+
+Status: SUCCESS
+
+------------------------------------------------------------```cmd### 3. Letakkan File ZIP
+
+```
+
+**Linux/macOS:**
+
+### log_alphanumeric.txt (Program Alphanumeric)
+
+```bashpython crack_zip_password_angka.py
+
+```
+
+============================================================python3 crack_zip_password_alpha.py
+
+ZIP Password Cracking Results (Alphanumeric)
+
+Length Range: 1-999 karakter``````Tempatkan semua file ZIP yang ingin di-crack ke dalam folder `FileZip/`:
+
+Character Set: a-z, A-Z, 0-9
+
+============================================================
+
+
+
+File: test_alphanumeric.zip**Windows:**
+
+Password: a1
+
+Status: SUCCESS```cmd
+
+------------------------------------------------------------
+
+```python crack_zip_password_alpha.py### Program 2️⃣: Crack Password Huruf (a-z, A-Z)```bash
+
+
+
+---```
+
+
+
+## 🎯 Pemilihan Program yang Tepatmkdir -p FileZip
+
+
+
+### 🤔 Program Mana yang Harus Digunakan?**Contoh Output:**
+
+
+
+| Jenis Password | Program | Kecepatan | Contoh |```**Linux/macOS:**# Copy file ZIP ke folder FileZip
+
+|----------------|---------|-----------|--------|
+
+| Pure angka (PIN, tanggal) | `angka.py` | ⚡⚡⚡ Tercepat | 123, 2024, 0815 |============================================================
+
+| Pure huruf | `alpha.py` | 🔶🔶 Sedang | abc, Password, ADMIN |
+
+| Campuran huruf + angka | `alphanumeric.py` | 🐌 Lambat | abc123, Pass2024, user1 |ZIP Password Cracker - Alphabetic Brute Force```bashcp /path/to/file.zip FileZip/
+
+| Tidak tahu jenisnya | Coba urut: angka → alpha → alphanumeric | - | - |
+
+Character Set: a-z, A-Z (52 karakter)
+
+### 💡 Tips Memilih:
+
+Support: ZipCrypto (Linux) + AES (Windows)python3 crack_zip_password_alpha.py```
+
+1. **Password pendek (<4 char)**: Coba alpha dulu
+
+2. **Password pure numeric**: Gunakan angka (paling cepat)============================================================
+
+3. **Password kompleks**: Gunakan alphanumeric (paling lengkap)
+
+4. **Tidak yakin**: Mulai dari yang tercepat (angka → alpha → alphanumeric)[*] Ditemukan 1 file ZIP```
+
+
+
+---[*] Memproses: test_alpha.zip
+
+
+
+## 🧪 Testing[*] Deteksi: ZipCrypto (Linux/Traditional)---
+
+
+
+Semua program sudah ditest dengan:
+
+
+
+| Program | Test Password | Result | Time |[*] Mencoba password 1 karakter...**Windows:**
+
+|---------|---------------|--------|------|
+
+| `angka.py` | 123 | ✅ Success | 0.05s |[*] Kombinasi untuk 1 karakter: 52
+
+| `alpha.py` | ab | ✅ Success | 0.02s |
+
+| `alphanumeric.py` | a1 | ✅ Success | 0.06s |[*] Length 1: [██████████████████████████████████████████████████] 100.0% (52/52)```cmd## 🚀 Cara Menggunakan
+
+
+
+**Test Coverage:**
+
+- ✅ ZipCrypto encryption (Linux `zip -P`)
+
+- ✅ AES encryption (Windows/modern tools)[*] Mencoba password 2 karakter...python crack_zip_password_alpha.py
+
+- ✅ Progress bar display
+
+- ✅ Log file creation[*] Kombinasi untuk 2 karakter: 2,704
+
+- ✅ Auto-extract functionality
+
+- ✅ Smart skip feature```### Menjalankan Program
+
+
+
+---[+] PASSWORD DITEMUKAN: ab
+
+
+
+## 🔒 Keamanan & Legal[+] Panjang: 2 karakter
+
+
+
+### ⚠️ Program ini hanya boleh digunakan untuk:[+] Ditemukan setelah mencoba 54 kombinasi dalam 0.02 detik
+
+
+
+- ✅ File ZIP milik sendiri yang lupa password```### Program 3️⃣: Crack Password Alphanumeric (a-z, A-Z, 0-9)**Linux/macOS:**
+
+- ✅ Recovery data pribadi
+
+- ✅ Testing keamanan dengan izin
+
+- ✅ Pembelajaran dan penelitian
+
+### Program 3️⃣: Crack Password Alphanumeric (a-z, A-Z, 0-9)```bash
+
+### ❌ DILARANG KERAS untuk:
+
+
+
+- ❌ File orang lain tanpa izin
+
+- ❌ Aktivitas illegal**Cocok untuk:** Password kombinasi huruf dan angka**Linux/macOS:**python3 crack_zip_password_angka.py
+
+- ❌ Bypass keamanan tanpa otorisasi
+
+- ❌ Tujuan jahat atau merugikan
+
+
+
+**Disclaimer:** Pengguna bertanggung jawab penuh atas penggunaan program ini. Developer tidak bertanggung jawab atas penyalahgunaan.**Linux/macOS:**```bash```
+
+
+
+---```bash
+
+
+
+## 📚 Dokumentasi Lengkap per Platformpython3 crack_zip_password_alphanumeric.pypython3 crack_zip_password_alphanumeric.py
+
+
+
+Untuk panduan instalasi, penggunaan, dan troubleshooting yang lebih detail, silakan buka dokumentasi sesuai platform Anda:```
+
+
+
+<table>```**Windows:**
+
+<tr>
+
+<td align="center" width="50%">**Windows:**
+
+
+
+### 🪟 Windows Users```cmd```cmd
+
+
+
+[![Windows Guide](https://img.shields.io/badge/📘_Complete_Windows_Guide-0078D6?style=for-the-badge&logo=windows)](README_WINDOWS.md)python crack_zip_password_alphanumeric.py
+
+
+
+**[→ Buka README_WINDOWS.md](README_WINDOWS.md)**```**Windows:**python crack_zip_password_angka.py
+
+
+
+Lengkap dengan:
+
+- Instalasi Python di Windows
+
+- Penggunaan CMD & PowerShell**Contoh Output:**```cmd```
+
+- Batch file automation
+
+- Task Scheduler setup```
+
+- Troubleshooting khusus Windows
+
+- Tips & tricks Windows============================================================python crack_zip_password_alphanumeric.py
+
+
+
+</td>ZIP Password Cracker - Alphanumeric Brute Force
+
+<td align="center" width="50%">
+
+Character Set: a-z, A-Z, 0-9 (62 karakter)```### Menu Interaktif
+
+### 🐧 Linux Users
+
+Support: ZipCrypto (Linux) + AES (Windows)
+
+[![Linux Guide](https://img.shields.io/badge/📗_Complete_Linux_Guide-FCC624?style=for-the-badge&logo=linux)](README_LINUX.md)
+
+============================================================
+
+**[→ Buka README_LINUX.md](README_LINUX.md)**
+
+[*] Ditemukan 1 file ZIP
+
+Lengkap dengan:
+
+- Instalasi untuk berbagai distro[*] Memproses: test_alphanumeric.zip---Setelah program dijalankan, Anda akan melihat menu pilihan digit:
+
+- Screen/Tmux untuk long-running
+
+- Systemd service setup[*] Deteksi: ZipCrypto (Linux/Traditional)
+
+- Cron job automation
+
+- Troubleshooting khusus Linux
+
+- Performance optimization
+
+[*] Mencoba password 1 karakter...
+
+</td>
+
+</tr>[*] Kombinasi untuk 1 karakter: 62## 📊 Performa & Estimasi Waktu```
+
+</table>
+
+[*] Length 1: [██████████████████████████████████████████████████] 100.0% (62/62)
+
+---
+
+============================================================
+
+## 🎓 FAQ
+
+[*] Mencoba password 2 karakter...
+
+### Q: Berapa lama waktu yang dibutuhkan untuk crack password?
+
+[*] Kombinasi untuk 2 karakter: 3,844### Program Angka (0-9)PILIH JUMLAH DIGIT PASSWORD
+
+**A:** Tergantung panjang dan kompleksitas password:
+
+- 1-3 digit angka: < 1 detik
+
+- 4 digit angka: ~30 detik
+
+- 2 huruf: < 1 detik  [+] PASSWORD DITEMUKAN: a1============================================================
+
+- 3 huruf: ~1 menit
+
+- 4+ karakter: Bisa berjam-jam hingga berhari-hari[+] Panjang: 2 karakter
+
+
+
+### Q: Apakah bisa crack password yang sangat panjang?[+] Ditemukan setelah mencoba 116 kombinasi dalam 0.06 detik| Digit | Kombinasi | Waktu Rata-rata | Worst Case |1. 1 digit  (0-9)          - Sangat Cepat
+
+
+
+**A:** Secara teknis bisa, tapi:```
+
+- Password > 8 karakter bisa memakan waktu tahun
+
+- Password > 10 karakter praktis tidak mungkin dengan brute force|-------|-----------|-----------------|------------|2. 2 digit  (0-99)         - Sangat Cepat
+
+- Gunakan dictionary attack atau hybrid attack untuk password panjang
+
+---
+
+### Q: Kenapa ada 3 program berbeda?
+
+| 1-3 | 1,110 | < 1 detik | < 1 detik |3. 3 digit  (0-999)        - Cepat
+
+**A:** Untuk optimasi kecepatan:
+
+- Program angka hanya coba 0-9 (tercepat)## 📊 Performa & Estimasi Waktu
+
+- Program alpha coba a-z, A-Z (sedang)
+
+- Program alphanumeric coba semua kombinasi (lengkap tapi lambat)| 4 | 10,000 | 30 detik | 5 menit |4. 4 digit  (0-9999)       - Normal (~1-5 menit)
+
+
+
+### Q: Apakah legal menggunakan program ini?### Program Angka (0-9) - 10 karakter
+
+
+
+**A:** Legal jika digunakan untuk:| 5 | 100,000 | 5 menit | 50 menit |5. 5 digit  (0-99999)      - Lama (~10-50 menit)
+
+- File milik sendiri yang lupa password
+
+- Testing dengan izin| Digit | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar |
+
+- Pembelajaran
+
+|-------|-----------|-----------------|------------|--------------|| 6 | 1,000,000 | 50 menit | 8 jam |6. 6 digit  (0-999999)     - Sangat Lama (~1-8 jam)
+
+Illegal jika untuk:
+
+- File orang lain tanpa izin| 1-3 | 1,110 | < 1 detik | < 1 detik | ✅ Real-time |
+
+- Aktivitas kriminal
+
+- Bypass keamanan tanpa otorisasi| 4 | 10,000 | 30 detik | 5 menit | ✅ Real-time || 7+ | 10,000,000+ | 8+ jam | 3+ hari |7. 7 digit  (0-9999999)    - Ekstrim (~10-80 jam)
+
+
+
+### Q: Bisa crack password dengan simbol (@, #, $, dll)?| 5 | 100,000 | 5 menit | 50 menit | ✅ Per 100k |
+
+
+
+**A:** Saat ini belum support simbol. Untuk menambahkan:| 6 | 1,000,000 | 50 menit | 8 jam | ✅ Per 100k |8. 8 digit  (0-99999999)   - Sangat Ekstrim (~100-800 jam)
+
+1. Edit `CHARSET` di program
+
+2. Tambahkan: `+ string.punctuation`| 7+ | 10,000,000+ | 8+ jam | 3+ hari | ✅ Per 100k |
+
+3. Note: Akan jauh lebih lambat!
+
+### Program Huruf (a-z, A-Z - 52 char)9. 9 digit  (0-999999999)  - Ultra Ekstrim (~1000-8000 jam)
+
+### Q: Program berhenti tiba-tiba, apa yang harus dilakukan?
+
+### Program Huruf (a-z, A-Z) - 52 karakter
+
+**A:** 
+
+1. Cek log file - mungkin sudah berhasil10. Custom Range (min-max) - Pilih sendiri
+
+2. Jalankan ulang - program akan skip file yang sudah berhasil
+
+3. Cek error message untuk troubleshooting| Length | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar |
+
+
+
+### Q: Bisa di-pause dan di-resume?|--------|-----------|-----------------|------------|--------------|| Length | Kombinasi | Waktu Rata-rata | Worst Case |============================================================
+
+
+
+**A:** Saat ini belum ada fitur pause/resume otomatis. Workaround:| 1-2 | 2,756 | < 1 detik | ~2 detik | ✅ Real-time |
+
+1. Tekan Ctrl+C untuk stop
+
+2. Note password terakhir yang dicoba| 3 | 140,608 | ~1 menit | ~2 menit | ✅ Per 100k ||--------|-----------|-----------------|------------|
+
+3. Edit program untuk mulai dari password tersebut
+
+| 4 | 7,311,616 | ~1 jam | ~2 jam | ✅ Per 100k |
+
+### Q: Kenapa progress bar kadang tidak smooth?
+
+| 5+ | 380,204,032+ | ~2+ hari | Sangat lama | ✅ Per 100k || 1-2 | 2,756 | < 1 detik | ~2 detik |Pilih opsi (1-10): 4
+
+**A:** Progress bar update berdasarkan kombinasi yang dicoba:
+
+- Kombinasi kecil: Update setiap password
+
+- Kombinasi besar: Update setiap 100k passwords
+
+- Ini untuk menjaga kecepatan cracking tetap optimal### Program Alphanumeric (a-z, A-Z, 0-9) - 62 karakter| 3 | 140,608 | ~1 menit | ~2 menit |```
+
+
+
+---
+
+
+
+## 📋 Changelog| Length | Kombinasi | Waktu Rata-rata | Worst Case | Progress Bar || 4 | 7,311,616 | ~1 jam | ~2 jam |
+
+
+
+### Version 2.0.0 (Current)|--------|-----------|-----------------|------------|--------------|
+
+
+
+**🎉 Major Update:**| 1-2 | 3,906 | < 1 detik | ~3 detik | ✅ Real-time || 5+ | 380,204,032+ | ~2+ hari | Sangat lama |### Contoh Output
+
+- ✅ Progress bar real-time untuk semua program
+
+- ✅ Auto-detection encryption type (AES vs ZipCrypto)| 3 | 238,328 | ~2 menit | ~3 menit | ✅ Per 100k |
+
+- ✅ Full cross-platform support (Linux & Windows ZIP)
+
+- ✅ Dual-method cracking (zipfile + pyzipper)| 4 | 14,776,336 | ~2 jam | ~4 jam | ✅ Per 100k |
+
+- ✅ Enhanced error handling
+
+- ✅ Improved password verification| 5+ | 916,132,832+ | ~5+ hari | Sangat lama | ✅ Per 100k |
+
+- ✅ Fixed "labas terus" bug
+
+### Program Alphanumeric (a-z, A-Z, 0-9 - 62 char)```
+
+**Dependencies:**
+
+- Added: pyzipper 0.3.6**Catatan:**
+
+- Added: pycryptodomex 3.23.0
+
+- Progress bar diupdate setiap mencoba password============================================================
+
+### Version 1.0.0
+
+- Untuk kombinasi > 100k, progress bar update setiap 100k attempts
+
+**Initial Release:**
+
+- ✅ 3 program berbeda (angka, alpha, alphanumeric)- AES encryption ~3x lebih lambat dari ZipCrypto| Length | Kombinasi | Waktu Rata-rata | Worst Case |ZIP Password Cracker - Multi-Digit Brute Force
+
+- ✅ Basic brute force functionality
+
+- ✅ Smart skip feature
+
+- ✅ Separate log files
+
+- ✅ Auto-extract---|--------|-----------|-----------------|------------|Cross-platform: Linux | Windows | macOS
+
+
+
+---
+
+
+
+## 👨‍💻 Author & Credits## 🔐 Tipe Enkripsi yang Didukung| 1-2 | 3,906 | < 1 detik | ~3 detik |============================================================
+
+
+
+**Created**: November 2025  
+
+**Version**: 2.0.0  
+
+**License**: Educational Use Only### 1️⃣ ZipCrypto (Traditional/Linux)| 3 | 238,328 | ~2 menit | ~3 menit |[*] Ditemukan 2 file ZIP
+
+
+
+**Built with:**
+
+- Python 3.6+
+
+- zipfile (standard library)**Dibuat dengan:**| 4 | 14,776,336 | ~2 jam | ~4 jam |[*] Memeriksa log.txt untuk file yang sudah di-crack...
+
+- pyzipper (AES support)
+
+- itertools (combination generation)- Linux: `zip -e` atau `zip -P password`
+
+- pathlib (path handling)
+
+- Older Windows tools| 5+ | 916,132,832+ | ~5+ hari | Sangat lama |
+
+---
+
+- Legacy ZIP programs
+
+## 📞 Support & Contributing
+
+[*] Memproses: archive1.zip
+
+### 🐛 Found a Bug?
+
+**Karakteristik:**
+
+Silakan report dengan informasi:
+
+1. Program yang digunakan- ⚡ Lebih cepat di-crack---[*] Range: 4-4 digit
+
+2. Pesan error lengkap
+
+3. File ZIP sample (jika memungkinkan)- 🔓 Enkripsi lebih lemah
+
+4. Python version
+
+5. Operating system- 📦 Compress type: 0 atau 8[*] File terenkripsi, mencoba crack password...
+
+
+
+### 💡 Feature Request?
+
+
+
+Silakan submit request dengan deskripsi:**Contoh:**## 🔒 Keamanan & Legal[*] Total kombinasi yang akan dicoba: 10,000
+
+1. Fitur yang diinginkan
+
+2. Use case / contoh penggunaan```bash
+
+3. Benefit yang didapat
+
+zip -P mypassword file.zip document.txt
+
+### 🤝 Want to Contribute?
+
+```
+
+Pull requests are welcome! Pastikan:
+
+1. Code mengikuti style yang ada⚠️ **Program ini hanya boleh digunakan untuk:**[*] Mencoba password 4 digit (1000 - 9999)
+
+2. Tambahkan test untuk fitur baru
+
+3. Update dokumentasi### 2️⃣ AES Encryption (Windows/Modern)
+
+
+
+---- ✅ File ZIP milik sendiri[*] Progress: 10,000/10,000 (100.00%) | Speed: 2500 pwd/s | Password: 2547
+
+
+
+## 🌟 Star History**Dibuat dengan:**
+
+
+
+Jika program ini membantu Anda, jangan lupa beri ⭐ star!- Windows Explorer (Right-click → Compress)- ✅ Recovery password yang lupa
+
+
+
+---- WinRAR dengan AES option
+
+
+
+**🎉 Happy Cracking! 🔓**- 7-Zip dengan AES-256- ✅ Testing & pembelajaran[+] PASSWORD DITEMUKAN: 2547
+
+
+
+*Remember: With great power comes great responsibility. Use wisely!*- Modern ZIP tools
+
+
+
+---[+] Ditemukan setelah mencoba 1,547 kombinasi dalam 0.62 detik
+
+
+
+**Version:** 2.0.0  **Karakteristik:**
+
+**Last Updated:** 10 November 2025  
+
+**Platforms:** Linux, Windows, macOS- 🛡️ Enkripsi lebih kuat (AES-128/192/256)❌ **DILARANG untuk:**[*] Mengekstrak file...
+
 
 - 🐌 Lebih lambat di-crack
 
